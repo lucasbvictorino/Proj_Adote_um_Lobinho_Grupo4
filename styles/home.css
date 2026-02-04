@@ -6,6 +6,7 @@
 
 :root{
     --branco-fonte: #FFFFFF;
+    --branco-icone: #FAFAFA;
     --azul-escuro: #2C5680;
     --azul-claro: #85CDF5;
     --dourado: #DEB956;
@@ -16,4 +17,159 @@ body{
     font-family: sans-serif;
     height: 100vh;
 }
+
+.section-slide{
+    width: 100%;
+    height: 500px;
+    background-image: url("../assets/images/LoboHome.png");
+    background-size: 100%;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-slide h1{
+    color: var(--branco-fonte);
+    font-size: 96px;
+    font-weight: 700;
+    margin: 32px;
+}
+
+.section-slide div{
+    background-color: var(--branco-fonte);
+    width: 99px;
+    height: 5px;
+    margin: 20px;
+}
+
+.section-slide p{
+    color: var(--branco-fonte);
+    width: 40vw;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section-sobre{
+    width: 100%;
+    height: 333px;
+    background-color: var(--azul-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-sobre h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dourado);
+    margin: 18px;
+}
+
+.section-sobre h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dourado);
+    margin: 18px;
+}
+
+.section-sobre p{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: var(--branco-fonte);
+    margin: 18px;
+    width: 58vw;
+}
+
+.section-valores{
+    width: 100%;
+    height: 625px;
+    background-color: var(--cinza-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-valores h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--dourado);
+    margin: 18px;
+}
+
+.valores-content{
+    width: 1050px;
+    height: 428px;
+    margin: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content{
+    width: 195px;
+    height: 428px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 28px;
+}
+
+.valores-content h3{
+    font-size: 26px;
+    color: var(--branco-fonte);
+    text-align: center;
+    margin: 38px 0;
+}
+
+.valores-content p{
+    width: 190px;
+    font-size: 18px;
+    color: var(--branco-fonte);
+    padding-left: 5px;
+    text-align: center;
+}
+
+.circulo-icone{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: var(--branco-icone);
+    margin: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lobos-exemplo{
+    height: 1100px;
+    background-color: var(--branco-fonte);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lobos-exemplo h2{
+    font-size: 36px;
+    color: var(--dourado);
+    font-weight: 700;
+    margin: 18px;
+}
+
+.exemplares{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
