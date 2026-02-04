@@ -4,6 +4,19 @@
 }
 
 
+body {
+    
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+main{
+    display: flex;
+    flex: 1;
+
+}
+
 header{
     background-color: #85CDF5;
     display: flex;
