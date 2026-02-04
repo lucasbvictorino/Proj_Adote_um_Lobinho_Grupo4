@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --branco-fonte: #FFFFFF;
+    --azul-escuro: #2C5680;
+    --azul-claro: #85CDF5;
+    --dourado: #DEB956;
+    --cinza-escuro: #333333;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+}
+
