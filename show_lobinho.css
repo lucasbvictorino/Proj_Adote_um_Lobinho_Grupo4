@@ -49,3 +49,26 @@ main, h2 {
     object-fit: cover; /* Mantém a proporção e preenche o espaço */
     position: relative; /* Mantém a imagem acima do fundo azul */
 }
+
+
+.botoes {
+    display: flex; /* organiza os botões em linha */
+    justify-content: center; /* centraliza os botões horizontalmente */
+    gap: 64px;
+    margin-top: 16px;
+}
+.botoes button {
+    padding: 14px 28px; /* aumenta o tamanho interno do botão */
+    min-width: 160px;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer; /* Mudar cursor para mão */
+    color: #fff;
+}
+.botoes .botao_adotar {
+    background-color: #2ecc71;
+}
+.botoes .botao_excluir {
+    background-color: #e74c3c;
+}
