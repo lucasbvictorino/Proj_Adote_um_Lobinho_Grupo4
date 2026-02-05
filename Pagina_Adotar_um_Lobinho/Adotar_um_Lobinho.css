@@ -99,3 +99,11 @@ main {
     background: transparent;
     padding: 4px 0;
 }
+
+button{
+    margin-top: 50px;
+    padding: 15px 50px;
+    background-color:#2C5680;
+    color:#FFFFFF;
+    font-size: 25px;
+}
