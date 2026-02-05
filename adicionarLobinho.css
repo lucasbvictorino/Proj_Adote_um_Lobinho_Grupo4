@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Darker Grotesque';
+    display:flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid #333333;
+    width: 958px;
+    height: 874px;
+}
+
+.input {
+    background-color: #E6E6E6;
+    border: 1px solid #333333;
+}
+
+main button {
+    font-family: 'Roboto';
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #2C5680;
+    width: 209px;
+    height: 60px;
+    border: 1px solid #333333;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: border 0.5s ease;
+}
+
+main button:hover {
+    border: 4px solid #333333;
+    transition: border 0.1s ease;
+}
+
+.nomeAnos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nome input {
+    width: 564px;
+    height: 39px;
+}
+
+.anos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.anos input {
+    width: 177.14px;
+    height: 39px;
+}
+
+.link input {
+    width: 760.98px;
+    height: 39px;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.descricao textarea {
+    width: 760.98px;
+    height: 250px;
+}
