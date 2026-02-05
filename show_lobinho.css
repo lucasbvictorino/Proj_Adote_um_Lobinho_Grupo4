@@ -5,3 +5,47 @@
     --dourado: #DEB956;
     --cinza-escuro: #333333;
 }
+
+main, h2 {
+    margin-bottom: 48px; /* Espaço abaixo do main e do h2 */
+    text-align: center; /* centralizar texto */
+    line-height: 3; /* Espaçamento vertical entre as linhas */
+    font-family: 'Roboto', sans-serif;
+}
+.InformacoesLobo {
+    display: flex; /* Ativar o flexbox */
+    align-items: flex-start;
+    gap: 40px; /* Espaço entre imagem e texto */
+    max-width: 900px;
+    margin: 0 auto;
+}
+.InformacoesLobo p {
+    max-width: 450px;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+}
+
+
+.imagem {
+    position: relative; /* Posiciona elementos internos */
+    width: 420px;
+    height: 300px;
+    flex-shrink: 0; /* impede o flexbox de reduzir esse elemento */
+}
+
+.imagem::before {
+    content: "";
+    position: absolute; /* posiciona em relação ao .imagem */
+    width: 420px;
+    height: 300px;
+    background-color:#2C5680;
+    top: -28px; /* Deslocar fundo para cima */
+    left: -28px; /* Deslocar fundo à esquerda */
+}
+.imagem img {
+    width: 420px;
+    height: 300px;
+    object-fit: cover; /* Mantém a proporção e preenche o espaço */
+    position: relative; /* Mantém a imagem acima do fundo azul */
+}
