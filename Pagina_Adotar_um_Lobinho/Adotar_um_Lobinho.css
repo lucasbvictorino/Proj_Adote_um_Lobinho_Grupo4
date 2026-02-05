@@ -13,3 +13,30 @@ main {
     align-items: center;
     width: 100%;
 }
+
+
+.perfil_lobo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 100px;
+}
+.perfil_lobo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;  /* Não distorce */
+    border-radius: 50%;
+}
+.perfil_lobo .nome_e_id {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil_lobo h2 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 600;
+}
