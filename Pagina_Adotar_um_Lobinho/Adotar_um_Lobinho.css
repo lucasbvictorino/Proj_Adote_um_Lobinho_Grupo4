@@ -1,0 +1,15 @@
+:root {
+    --branco-fonte: #FFFFFF;
+    --azul-escuro: #2C5680;
+    --azul-claro: #85CDF5;
+    --dourado: #DEB956;
+    --cinza-escuro: #333333;
+}
+
+main {
+    font-family: 'Darker Grotesque', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
