@@ -1,0 +1,24 @@
+{
+  "name": "proj_1",
+  "version": "1.0.0",
+  "description": "Projeto Adote um Lobinho feito pelo Grupo 4",
+  "main": "index.js",
+  "scripts": {
+    "start:api": "json-server --watch lobinhos.json --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasbvictorino/Proj_Adote_um_Lobinho_Grupo4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lucasbvictorino/Proj_Adote_um_Lobinho_Grupo4/issues"
+  },
+  "homepage": "https://github.com/lucasbvictorino/Proj_Adote_um_Lobinho_Grupo4#readme",
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  }
+}

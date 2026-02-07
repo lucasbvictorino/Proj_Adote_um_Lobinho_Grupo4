@@ -1,86 +1,15 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-
-.section-pesquisa {
-    display: flex;
-    justify-content: center;
-}
-
-.pesquisa-container {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    width: 85%;
-    gap: 15px;
-}
-
-.pesquisa {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    gap: 20px;
-}
-
-.icone input {
-    width: 775px;
-    height: 47px;
-    border: 1px solid #333333;
-}
-
-.pesquisa a {
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Darker Grotesque';
-    font-size: 36px;
-    background-color: #DEB959;
-    padding: 0 20px;
-}
-
-.icone {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-}
-
-.icone img {
-    position: absolute;
-    left: 6px;
-    width: 33px;
-}
-
-.check {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
-
-.check label {
-    font-size: 24px;
-    font-weight: 600;
-    font-family: 'Darker Grotesque';
-    color: #353535;
-}
-
-.check input {
-    width: 20px;
-}
-
-.catalogo {
-    height: 1000px;
+    
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
 }
 
 header{
@@ -90,6 +19,8 @@ header{
     justify-content: center;
 
 }
+
+
 
 .header-container{
     width: 80%;
@@ -101,11 +32,6 @@ header{
     justify-content: space-between;
 }
 
-.header-container h2{
-    font-family: "Darker Grotesque", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-}
 
 .header-container a{
     font-family: "Darker Grotesque", sans-serif;
@@ -125,6 +51,56 @@ header{
 .header-container a:hover{
     background-size: 65% 5px;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    flex: 1;
+}
+
+.main-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.main-container h1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000000;
+
+}
+
+.main-container p{
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 15.5%;
+    color: #000000;
+    
+
+}
+
+
+
+
+
+
+
+aside{
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, #2C5680 0%, #DEB959 100%);
+
+}
+
+
 
 footer{
     background-color: #333333;
@@ -181,17 +157,22 @@ footer{
     color: #FFFFFF;
 }
 
-.info-container button{
+.info-container a{
     background-color: #DEB959;
     color: #353535;
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 700;
     font-size: 25px;
-    border: none;
     padding: 6px 18px;
     width: fit-content;
     cursor: pointer;
-    
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.info-container a:hover{
+    color: #4b3621;
+    transform: scale(1.05);
 }
 
 .logo-container{
