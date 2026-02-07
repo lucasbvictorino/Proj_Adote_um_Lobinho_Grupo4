@@ -118,6 +118,12 @@ header{
     color: #FFFFFF;
     background-color: #DEB959;
     padding: 0 10px;
+    transition: 0.5s;
+}
+
+.input-container a:hover{
+    color: black;
+    transform: scale(1.05);
 }
 
 .checkbox-container{
