@@ -278,6 +278,7 @@ header{
 .container-index{
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .index-paginacao{
