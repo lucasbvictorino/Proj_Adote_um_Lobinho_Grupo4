@@ -32,5 +32,13 @@ function gerarTemplatePaginacao(atual, total) {
 }
 
 async function carregarPagina(pagina) {
+    try {
+        const lobinhosPaginados =  await buscarLobinhosPaginados(pagina);
+        gerarTemplatePaginacao(pagina, lobinhosPaginados.totalPaginas);
+    } catch(error) {
+        console.error("Erro ao carregar.", error);
+    }
     
 }
+
+carregarPagina(paginaAtual);

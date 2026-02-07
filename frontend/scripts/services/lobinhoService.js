@@ -1,4 +1,4 @@
-async function buscarLobinhos() {
+export async function buscarLobinhos() {
     try{
         const response = await fetch("http://localhost:3000/lobinhos");
         if (!response.ok) {
@@ -15,7 +15,7 @@ async function buscarLobinhos() {
 }
 
 
-async function buscarLobinhosPaginados(pagina = 1, limite = 4) {
+export async function buscarLobinhosPaginados(pagina = 1, limite = 4) {
 
     try {
         const response = await fetch(`http://localhost:3000/lobinhos?_page=${pagina}&_limit=${limite}`);
