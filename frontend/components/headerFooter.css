@@ -115,17 +115,22 @@ footer{
     color: #FFFFFF;
 }
 
-.info-container button{
+.info-container a{
     background-color: #DEB959;
     color: #353535;
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 700;
     font-size: 25px;
-    border: none;
     padding: 6px 18px;
     width: fit-content;
     cursor: pointer;
-    
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.info-container a:hover{
+    color: #4b3621;
+    transform: scale(1.05);
 }
 
 .logo-container{
