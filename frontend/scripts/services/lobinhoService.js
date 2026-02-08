@@ -1,34 +1,29 @@
 export async function buscarLobinhos() {
-    try{
+    try {
         const response = await fetch("http://localhost:3000/lobinhos");
-        if (!response.ok) {
-            throw new Error(`Erro HTTP! Status: ${response.status}`);
-        }
-        const lobinhos = await response.json();
-        console.log("Lobinhos encontrados:", lobinhos);
-        return lobinhos;
-
-    } catch(error) {
-        console.log("Erro ao buscar lobinhos:" + error);
+        if (!response.ok) throw new Error(`Erro HTTP! Status: ${response.status}`);
+        return await response.json();
+    } catch (error) {
+        console.error("Erro ao buscar lobinhos:", error);
         throw error;
-    } 
+    }
 }
 
-
-export async function buscarLobinhosPaginados(pagina = 1, limite = 4) {
-
+export async function buscarLobinhosPaginados(pagina = 1, limite = 4, nome = "", soAdotados = false) {
     try {
-        const response = await fetch(`http://localhost:3000/lobinhos?_page=${pagina}&_limit=${limite}`);
-
-        if(!response.ok) {
-            throw new Error(`Erro HTTP! Status: ${response.status}`);
+        let url = `http://localhost:3000/lobinhos?_page=${pagina}&_limit=${limite}`;
+        if (nome) {
+            url += `&nome_like=${nome}`;
         }
+        if (soAdotados) {
+            url += `&adotado=true`;
+        }
+
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Erro HTTP! Status: ${response.status}`);
+        
         const lobinhos = await response.json();
-
         const totalItens = response.headers.get("X-Total-Count");
-
-        console.log(`Página ${pagina} (${limite} por página):`, lobinhos);
-        console.log(`Total de lobinhos: ${totalItens}`);
 
         return {
             dados: lobinhos,
@@ -37,12 +32,29 @@ export async function buscarLobinhosPaginados(pagina = 1, limite = 4) {
             total: parseInt(totalItens),
             totalPaginas: Math.ceil(parseInt(totalItens) / limite)
         };
-    } catch(error) {
+    } catch (error) {
         console.error("Erro ao buscar lobinhos paginados:", error);
         throw error;
     }
-    
 }
 
-// buscarLobinhos();
-buscarLobinhosPaginados(2);
+
+
+async function deletarLobinho(id){
+    try{
+        const response = await fetch(`http://localhost:3000/lobinhos/${id}`, {
+            method: 'DELETE'
+        });
+
+        if(!response.ok){
+            throw new Error(`Erro HTTP! Status: ${response.status}`);
+        }
+
+        console.log(`Lobinho com id ${id} foi deletado com sucesso`);
+        return true;
+    }   catch(error){
+        console.error('Erro ao deletar lobinho', error);
+        throw error;
+    }
+}
+
