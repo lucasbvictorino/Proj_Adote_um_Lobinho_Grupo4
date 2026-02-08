@@ -205,6 +205,8 @@ body{
     left: 41px;
     z-index: 2;
     display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 .exemplar2 .imagens::before {
