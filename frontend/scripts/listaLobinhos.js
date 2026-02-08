@@ -8,7 +8,7 @@ function gerarTemplatePaginacao(atual, total) {
     for(let i = 1; i <= total; i++) {
         if(i === 1) {
             listaBotoes.push(i);   
-            if(1 < atual - numPaginasAdj) {
+            if(1 < atual - (numPaginasAdj + 1)) {
                 listaBotoes.push("...");
             }
         }
@@ -16,7 +16,7 @@ function gerarTemplatePaginacao(atual, total) {
             listaBotoes.push(i);
         } 
         else if(i === total) {
-            if(total > atual + numPaginasAdj) {
+            if(total > atual + (numPaginasAdj + 1)) {
                 listaBotoes.push("...");
             }
             listaBotoes.push(i);
@@ -27,8 +27,26 @@ function gerarTemplatePaginacao(atual, total) {
     container.innerHTML = "";
 
     listaBotoes.forEach((item) => {
-        container.innerHTML += `<span>${item}</span>`
-    })
+        const li = document.createElement("li");
+
+        if(item === "..."){
+            li.innerHTML = `<span class="salto">...</span>`;
+        } else {
+            const botao = document.createElement("button");
+            botao.textContent = item;
+            botao.classList.add("botao-paginacao");
+
+            if(item === atual) {
+                botao.classList.add("botao-ativo");
+            }
+            botao.onclick = (() => {
+                paginaAtual = item;
+                carregarPagina(paginaAtual);
+            });
+            li.append(botao);
+        }
+        container.append(li);
+    });
 }
 
 async function carregarPagina(pagina) {

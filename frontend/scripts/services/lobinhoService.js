@@ -45,4 +45,4 @@ export async function buscarLobinhosPaginados(pagina = 1, limite = 4) {
 }
 
 // buscarLobinhos();
-buscarLobinhosPaginados(1);
+buscarLobinhosPaginados(2);

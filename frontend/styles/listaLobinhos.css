@@ -282,13 +282,32 @@ header{
 }
 
 .index-paginacao{
-    color: #000000;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 3px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
 }
 
+.botao-paginacao {
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 2px 4px;
+    color: #2C5680;
+    background-color: white;
+    border-radius: 4px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
 
+.botao-ativo {
+    background-color: #2C5680;
+    color: white ;
+    border-radius: 4px;
+}
 
 aside{
     width: 100%;
