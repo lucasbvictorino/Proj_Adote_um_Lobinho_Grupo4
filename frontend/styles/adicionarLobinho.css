@@ -71,6 +71,12 @@ main {
     gap: 20px;
 }
 
+.main-container input, #descricaoNovo{
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 18px;
+}
+
 .nome {
     display: flex;
     flex-direction: column;
