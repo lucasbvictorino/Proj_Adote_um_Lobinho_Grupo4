@@ -1,28 +1,6 @@
 {
   "lobinhos": [
     {
-      "id": 1,
-      "nome": "Jada",
-      "idade": 94,
-      "descricao": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-      "imagem": "https://www.petz.com.br/blog/wp-content/uploads/2022/10/lobo-e-carnivoro-interna-2.jpg",
-      "adotado": false,
-      "nomeDono": null,
-      "idadeDono": null,
-      "emailDono": null
-    },
-    {
-      "id": 2,
-      "nome": "Seth",
-      "idade": 46,
-      "descricao": "Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-      "imagem": "https://media.istockphoto.com/id/177794699/pt/foto/lobo-cinzento-retrato.jpg?s=612x612&w=0&k=20&c=iZHohTbptMVPjsS2l08tCX_LLoGVVyowGYUg4sI1yc4=",
-      "adotado": false,
-      "nomeDono": null,
-      "idadeDono": null,
-      "emailDono": null
-    },
-    {
       "id": 3,
       "nome": "Rubetta",
       "idade": 4,
