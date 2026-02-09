@@ -21,8 +21,6 @@ function renderizarLobosNaTela(lobinhos) {
         }
 
 
-    
-
         let textoBotao = "Adotar";
         let linkDestino = `./showLobinho.html?id=${lobo.id}`;
         let classeBotao = "";
