@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { buscarLobinhos } from './services/lobinhoService.js';
 
 const params = new URLSearchParams(window.location.search);
@@ -63,5 +62,3 @@ botaoExcluir.addEventListener("click", async () => {
 });
 
 carregarShowLobinho(idLobinho);
-=======
->>>>>>> 58286569bd653994ae490e156c3c11ce08c3aa2c
